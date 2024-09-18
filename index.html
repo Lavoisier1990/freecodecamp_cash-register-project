@@ -4,47 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
-    />
     <title>Cash Register</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <main>
-      <img
-        class="freecodecamp-logo"
-        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
-        alt="freeCodeCamp Logo"
-      />
+        <div class="logo">Arc-Hive</div>
       <h1>Cash Register Project</h1>
-      <div id="change-due"></div>
-      <div class="input-div">
-        <label for="cash">Enter cash from customer:</label>
-        <input type="number" id="cash" class="user-input" value="" />
-        <button class="check-btn-styles" id="purchase-btn">Purchase</button>
-      </div>
+
       <div class="container">
+        <div class="top-display-screen-container">
+          <input type="number" id="cash" class="user-input" required placeholder="Customer payment" />
+        </div>
         <div class="top-display-screen-container">
           <p id="price-screen" class="price-screen"></p>
           <div class="connector"></div>
         </div>
         <div class="top-register">
+          <div class="display-container">
           <div class="btns-container">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+            <button class="grid-btn" id="one-btn">1</button>
+            <button class="grid-btn" id="two-btn">2</button>
+            <button class="grid-btn" id="three-btn">3</button>
+            <button class="grid-btn" id="four-btn">4</button>
+            <button class="grid-btn" id="five-btn">5</button>
+            <button class="grid-btn" id="six-btn">6</button>
+            <button class="grid-btn" id="seven-btn">7</button>
+            <button class="grid-btn" id="eight-btn">8</button>
+            <button class="grid-btn" id="nine-btn">9</button>
+            <button class="grid-btn" id="star-btn">*</button>
+            <button class="grid-btn" id="zero-btn">0</button>
+            <button class="grid-btn" id="hash-btn">#</button>
+            <button class="purchase-btn" id="purchase-btn">Purchase</button>
           </div>
           <div id="cash-drawer-display" class="cash-drawer-display"></div>
+         </div>
         </div>
+        <div id="change-due"></div>
         <div class="bottom-register">
           <div class="circle"></div>
         </div>
@@ -52,4 +49,5 @@
     </main>
     <script src="./script.js"></script>
   </body>
+
 </html>
