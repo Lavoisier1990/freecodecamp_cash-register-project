@@ -110,23 +110,34 @@
   }
 
   .btns-container {
-    width: 30%;
-    border: solid red 1px;
+    width: 45%;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    gap: 5px;
   }
 
   .grid-btn {
-    border-radius: 10%;
+    cursor: pointer;
+    border-radius: 20%;
+    height: 35px;
     border: none;
-    width: 20px;
-    height: 20px;
     background-color: black;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    font-size: larger;
+    border-style: outset;
+  }
+
+  .grid-btn:active {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   .purchase-btn {
     cursor: pointer;
-    width: 100px;
+    grid-column: 1 / span 3;
     height: 30px;
-    margin: 10px;
+    margin: 8px;
     color: #0a0a23;
     font-size: 18px;
     font-weight: bold;
@@ -140,10 +151,11 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
-    border: solid red 1px;
+
   }
 
   .cash-drawer-display {
+    border-radius: 10px;
     font-size: 1.1rem;
     background-color: white;
     width: 50%;
