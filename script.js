@@ -15,6 +15,21 @@ const zeroBtn = document.getElementById("zero-btn");
 const clearBtn = document.getElementById("clear-btn");
 const purchaseBtn = document.getElementById("purchase-btn");
 
+customerCash.addEventListener('input', function() {
+  // Replace commas with periods
+  let value = this.value.replace(/,/g, '.');
+
+  // Remove non-numeric characters except for decimal point
+  value = value.replace(/[^0-9.]/g, '');
+
+  // Ensure only two decimal places
+  const decimalIndex = value.indexOf('.');
+  if (decimalIndex !== -1) {
+      value = value.substring(0, decimalIndex + 3); // Keep two decimal places
+  }
+
+  this.value = value;
+});
 
 
 let price = 1.87;
