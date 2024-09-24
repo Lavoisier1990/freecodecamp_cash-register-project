@@ -136,10 +136,14 @@ zeroBtn.addEventListener("click", () => {
 });
 
 clearBtn.addEventListener("click", () => {
-   if (customerCash.value.length === 0){
-    customerCash.focus();
-    customerCash.value += " ";
-} else {
-    customerCash.value += " ";
-};
+   if(customerCash.value.length === 0){
+      customerCash.focus();
+  } else {
+      let backspaced = customerCash.value.slice(0, customerCash.value.length-1);
+      customerCash.value = backspaced;
+  };
+});
+
+resetBtn.addEventListener("click", () => {
+   customerCash.value = "";
 });
