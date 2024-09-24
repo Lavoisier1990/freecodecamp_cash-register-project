@@ -15,7 +15,7 @@
 
       <div class="container">
         <div class="top-display-screen-container">
-          <input type="text" id="cash" class="user-input" step="0.01" required placeholder="Customer payment" />
+          <input type="text" id="cash" class="user-input" required placeholder="Customer payment" onblur="roundingOff()"/>
         </div>
         <div class="top-display-screen-container">
           <p id="price-screen" class="price-screen"></p>

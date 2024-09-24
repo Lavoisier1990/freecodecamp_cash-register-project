@@ -32,6 +32,10 @@ let cid = [
   ['ONE HUNDRED', 100]
 ];
 
+function roundingOff(){
+   customerCash.value = parseFloat(`${customerCash.value}`).toFixed(2);
+}
+
 oneBtn.addEventListener("click", () => {
   if (customerCash.value.length === 0){
    customerCash.focus();
