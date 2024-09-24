@@ -114,16 +114,12 @@ nineBtn.addEventListener("click", () => {
 });
 
 dotBtn.addEventListener("click", () => {
-  // Get the current value of the input
-  let currentValue = customerCash.value;
-
-  // Add a period to the input value
-  if (currentValue.indexOf('.') === -1) {
-      currentValue += '.'; // Add a period only if it doesn't already have one
-  }
-
-  // Update the input field with the new value
-  customerCash.value = currentValue;
+   //Add a period only if it doesn't already have one
+  if (customerCash.value.indexOf('.') === -1) {
+      customerCash.value += '.';
+  } else {
+   customerCash.value;
+  };
 });
 
 zeroBtn.addEventListener("click", () => {
